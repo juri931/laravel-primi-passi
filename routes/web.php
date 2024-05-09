@@ -15,17 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function(){
 
+
     // METODO 1
     // return view('home', ['name' => 'Mario', 'lastname' => 'Pappardello'])
 
-    // METODO 2
+
+    // METODO 2 (array associativo)
     // $data = [
     //     'name' = 'Mario',
     //     'lastname' = 'Pappardello'
     // ];
     // return view('home', $data);
 
-    // METODO 3
+
+    // METODO 3 (più pulito e comodo)
     $name = 'Mario';
     $lastname = 'Pappardello';
 
